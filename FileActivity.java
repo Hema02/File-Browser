@@ -170,7 +170,8 @@ public class TrialActivity extends Activity {
 		String Fname,Fextn,temp;
 		int j;
 		long size;
-		File mfile=new File("/");
+		File mfile=new File("/"); // For files in the internal memory
+		//File mfile=new File(""/sdcard/"); // Comment previous line and uncomment this line to display files in the sd card 
 		final File[] list=mfile.listFiles();
 		for(int i=0;i<list.length;i++){
 			
